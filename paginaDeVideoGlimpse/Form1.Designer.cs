@@ -63,7 +63,7 @@ namespace paginaDeVideoGlimpse
             this.btnsalirdevideos.FlatAppearance.BorderSize = 0;
             this.btnsalirdevideos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsalirdevideos.Image = ((System.Drawing.Image)(resources.GetObject("btnsalirdevideos.Image")));
-            this.btnsalirdevideos.Location = new System.Drawing.Point(175, 116);
+            this.btnsalirdevideos.Location = new System.Drawing.Point(175, 100);
             this.btnsalirdevideos.Margin = new System.Windows.Forms.Padding(7, 9, 7, 9);
             this.btnsalirdevideos.Name = "btnsalirdevideos";
             this.btnsalirdevideos.Size = new System.Drawing.Size(153, 36);
@@ -76,7 +76,7 @@ namespace paginaDeVideoGlimpse
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Myanmar Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(67)))), ((int)(((byte)(109)))));
-            this.label2.Location = new System.Drawing.Point(733, 123);
+            this.label2.Location = new System.Drawing.Point(733, 107);
             this.label2.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(193, 48);
@@ -89,7 +89,7 @@ namespace paginaDeVideoGlimpse
             this.GlimpseNow.FlatAppearance.BorderSize = 0;
             this.GlimpseNow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GlimpseNow.Image = ((System.Drawing.Image)(resources.GetObject("GlimpseNow.Image")));
-            this.GlimpseNow.Location = new System.Drawing.Point(765, 390);
+            this.GlimpseNow.Location = new System.Drawing.Point(765, 374);
             this.GlimpseNow.Name = "GlimpseNow";
             this.GlimpseNow.Size = new System.Drawing.Size(335, 50);
             this.GlimpseNow.TabIndex = 3;
@@ -101,7 +101,7 @@ namespace paginaDeVideoGlimpse
             this.btnglimpse1.FlatAppearance.BorderSize = 0;
             this.btnglimpse1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnglimpse1.Image = ((System.Drawing.Image)(resources.GetObject("btnglimpse1.Image")));
-            this.btnglimpse1.Location = new System.Drawing.Point(675, 116);
+            this.btnglimpse1.Location = new System.Drawing.Point(675, 100);
             this.btnglimpse1.Name = "btnglimpse1";
             this.btnglimpse1.Size = new System.Drawing.Size(55, 55);
             this.btnglimpse1.TabIndex = 7;
@@ -113,7 +113,7 @@ namespace paginaDeVideoGlimpse
             this.btncambiar1.FlatAppearance.BorderSize = 0;
             this.btncambiar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncambiar1.Image = ((System.Drawing.Image)(resources.GetObject("btncambiar1.Image")));
-            this.btncambiar1.Location = new System.Drawing.Point(495, 322);
+            this.btncambiar1.Location = new System.Drawing.Point(495, 306);
             this.btncambiar1.Name = "btncambiar1";
             this.btncambiar1.Size = new System.Drawing.Size(23, 23);
             this.btncambiar1.TabIndex = 8;
@@ -125,7 +125,7 @@ namespace paginaDeVideoGlimpse
             this.btnlike.FlatAppearance.BorderSize = 0;
             this.btnlike.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnlike.Image = ((System.Drawing.Image)(resources.GetObject("btnlike.Image")));
-            this.btnlike.Location = new System.Drawing.Point(489, 377);
+            this.btnlike.Location = new System.Drawing.Point(489, 361);
             this.btnlike.Name = "btnlike";
             this.btnlike.Size = new System.Drawing.Size(36, 32);
             this.btnlike.TabIndex = 10;
@@ -137,7 +137,7 @@ namespace paginaDeVideoGlimpse
             this.btncambiar2.FlatAppearance.BorderSize = 0;
             this.btncambiar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncambiar2.Image = ((System.Drawing.Image)(resources.GetObject("btncambiar2.Image")));
-            this.btncambiar2.Location = new System.Drawing.Point(495, 495);
+            this.btncambiar2.Location = new System.Drawing.Point(495, 479);
             this.btncambiar2.Name = "btncambiar2";
             this.btncambiar2.Size = new System.Drawing.Size(23, 24);
             this.btncambiar2.TabIndex = 12;
@@ -149,7 +149,7 @@ namespace paginaDeVideoGlimpse
             this.btnshare.FlatAppearance.BorderSize = 0;
             this.btnshare.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnshare.Image = ((System.Drawing.Image)(resources.GetObject("btnshare.Image")));
-            this.btnshare.Location = new System.Drawing.Point(489, 433);
+            this.btnshare.Location = new System.Drawing.Point(489, 417);
             this.btnshare.Name = "btnshare";
             this.btnshare.Size = new System.Drawing.Size(36, 31);
             this.btnshare.TabIndex = 11;
@@ -160,7 +160,7 @@ namespace paginaDeVideoGlimpse
             // 
             this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(757, 183);
+            this.pictureBox1.Location = new System.Drawing.Point(757, 167);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(343, 196);
             this.pictureBox1.TabIndex = 13;
@@ -181,7 +181,7 @@ namespace paginaDeVideoGlimpse
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(29, 543);
+            this.pictureBox2.Location = new System.Drawing.Point(29, 547);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(37, 165);
             this.pictureBox2.TabIndex = 15;
@@ -201,7 +201,7 @@ namespace paginaDeVideoGlimpse
             this.btnstory1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnstory1.BackgroundImage")));
             this.btnstory1.FlatAppearance.BorderSize = 0;
             this.btnstory1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnstory1.Location = new System.Drawing.Point(945, 505);
+            this.btnstory1.Location = new System.Drawing.Point(945, 489);
             this.btnstory1.Name = "btnstory1";
             this.btnstory1.Size = new System.Drawing.Size(102, 153);
             this.btnstory1.TabIndex = 1;
@@ -212,7 +212,7 @@ namespace paginaDeVideoGlimpse
             this.btnstory2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnstory2.BackgroundImage")));
             this.btnstory2.FlatAppearance.BorderSize = 0;
             this.btnstory2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnstory2.Location = new System.Drawing.Point(812, 506);
+            this.btnstory2.Location = new System.Drawing.Point(812, 490);
             this.btnstory2.Name = "btnstory2";
             this.btnstory2.Size = new System.Drawing.Size(102, 153);
             this.btnstory2.TabIndex = 2;
@@ -222,7 +222,7 @@ namespace paginaDeVideoGlimpse
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(765, 450);
+            this.pictureBox4.Location = new System.Drawing.Point(765, 434);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(335, 232);
             this.pictureBox4.TabIndex = 17;
@@ -287,7 +287,7 @@ namespace paginaDeVideoGlimpse
             // playervideo
             // 
             this.playervideo.Enabled = true;
-            this.playervideo.Location = new System.Drawing.Point(221, 183);
+            this.playervideo.Location = new System.Drawing.Point(221, 167);
             this.playervideo.Name = "playervideo";
             this.playervideo.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("playervideo.OcxState")));
             this.playervideo.Size = new System.Drawing.Size(251, 490);

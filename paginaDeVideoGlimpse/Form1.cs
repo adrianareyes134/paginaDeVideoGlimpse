@@ -12,6 +12,13 @@ namespace paginaDeVideoGlimpse
 {
     public partial class Form1 : Form
     {
+
+        // Lista donde se guardarán todos los videos subidos
+        List<string> listaVideos = new List<string>();
+
+        // Índice del video actual
+        int indiceActual = 0;
+
         public Form1()
         {
             InitializeComponent();
@@ -53,8 +60,14 @@ namespace paginaDeVideoGlimpse
             ofd.Filter = "Archivos de video|*.mp4;*.avi;*.mov";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                playervideo.URL = ofd.FileName;
-                MessageBox.Show("¡Subiste un nuevo Glimpse!");
+                string rutaVideo = ofd.FileName;
+                listaVideos.Add(rutaVideo); // 👈 lo agregamos a la lista
+
+                indiceActual = listaVideos.Count - 1; // Nos posicionamos en el último video
+                playervideo.URL = rutaVideo;
+                playervideo.Ctlcontrols.play();
+
+                MessageBox.Show("¡Subiste un video! 🎥");
             }
         }
 
@@ -78,20 +91,26 @@ namespace paginaDeVideoGlimpse
 
         private void btncambiar1_Click(object sender, EventArgs e)
         {
-            currentVideoIndex++;
-            if (currentVideoIndex >= videos.Count)
-                currentVideoIndex = 0;
+            if (listaVideos.Count == 0) return;
 
-            playervideo.URL = videos[currentVideoIndex];
+            indiceActual++;
+            if (indiceActual >= listaVideos.Count)
+                indiceActual = 0;
+
+            playervideo.URL = listaVideos[indiceActual];
+            playervideo.Ctlcontrols.play();
         }
 
         private void btncambiar2_Click(object sender, EventArgs e)
         {
-            currentVideoIndex++;
-            if (currentVideoIndex >= videos.Count)
-                currentVideoIndex = 0;
+            if (listaVideos.Count == 0) return;
 
-            playervideo.URL = videos[currentVideoIndex];
+            indiceActual++;
+            if (indiceActual >= listaVideos.Count)
+                indiceActual = 0;
+
+            playervideo.URL = listaVideos[indiceActual];
+            playervideo.Ctlcontrols.play();
         }
     }
 }
