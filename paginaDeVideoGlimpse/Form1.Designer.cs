@@ -323,6 +323,7 @@ namespace paginaDeVideoGlimpse
             this.Controls.Add(this.btnsalirdevideos);
             this.Controls.Add(this.pictureBox4);
             this.Font = new System.Drawing.Font("Myanmar Text", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(7, 9, 7, 9);
             this.Name = "Form1";
             this.Text = "Form1";
