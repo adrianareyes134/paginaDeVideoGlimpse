@@ -1,8 +1,10 @@
-﻿using System;
+﻿using AxWMPLib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +14,6 @@ namespace paginaDeVideoGlimpse
 {
     public partial class Form1 : Form
     {
-
         // Lista donde se guardarán todos los videos subidos
         List<string> listaVideos = new List<string>();
 
@@ -61,10 +62,11 @@ namespace paginaDeVideoGlimpse
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 string rutaVideo = ofd.FileName;
-                listaVideos.Add(rutaVideo); // 👈 lo agregamos a la lista
+                listaVideos.Add(rutaVideo); // lo agregamos a la lista
 
                 indiceActual = listaVideos.Count - 1; // Nos posicionamos en el último video
                 playervideo.URL = rutaVideo;
+                playervideo.settings.setMode("loop", true);
                 playervideo.Ctlcontrols.play();
 
                 MessageBox.Show("¡Subiste un video! 🎥");
@@ -98,6 +100,7 @@ namespace paginaDeVideoGlimpse
                 indiceActual = 0;
 
             playervideo.URL = listaVideos[indiceActual];
+            playervideo.settings.setMode("loop", true);
             playervideo.Ctlcontrols.play();
         }
 
@@ -110,7 +113,40 @@ namespace paginaDeVideoGlimpse
                 indiceActual = 0;
 
             playervideo.URL = listaVideos[indiceActual];
+            playervideo.settings.setMode("loop", true);
+            playervideo.Ctlcontrols.play();
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+            // Ruta base (donde están los videos dentro del proyecto)
+            string rutaBase = Path.Combine(Application.StartupPath, "Videos");
+
+            // Cargar 10 videos predefinidos
+            for (int i = 1; i <= 10; i++)
+            {
+                string rutaVideo = Path.Combine(rutaBase, $"video{i}.mp4");
+
+                if (File.Exists(rutaVideo))
+                {
+                    listaVideos.Add(rutaVideo);
+                }
+            }
+
+            // Reproducir el primer video automáticamente si hay alguno
+            if (listaVideos.Count > 0)
+            {
+                indiceActual = 0;
+                ReproducirVideo(listaVideos[0]); // usar función para reproducir en loop
+            }
+        }
+
+        private void ReproducirVideo(string ruta)
+        {
+            playervideo.URL = ruta;
+            playervideo.settings.setMode("loop", true);
             playervideo.Ctlcontrols.play();
         }
     }
+    
 }
