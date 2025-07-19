@@ -99,22 +99,18 @@ namespace paginaDeVideoGlimpse
             if (indiceActual >= listaVideos.Count)
                 indiceActual = 0;
 
-            playervideo.URL = listaVideos[indiceActual];
-            playervideo.settings.setMode("loop", true);
-            playervideo.Ctlcontrols.play();
+            ReproducirVideo(listaVideos[indiceActual]);
         }
 
         private void btncambiar2_Click(object sender, EventArgs e)
         {
             if (listaVideos.Count == 0) return;
 
-            indiceActual++;
-            if (indiceActual >= listaVideos.Count)
-                indiceActual = 0;
+            indiceActual--;
+            if (indiceActual < 0)
+                indiceActual = listaVideos.Count - 1;
 
-            playervideo.URL = listaVideos[indiceActual];
-            playervideo.settings.setMode("loop", true);
-            playervideo.Ctlcontrols.play();
+            ReproducirVideo(listaVideos[indiceActual]);
         }
 
         private void Form1_Load_1(object sender, EventArgs e)
